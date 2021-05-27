@@ -33,6 +33,5 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: WhiteSource@21
+- task: AzSKARMTemplateChecker@4
   inputs:
-    cwd: '$(System.DefaultWorkingDirectory)'

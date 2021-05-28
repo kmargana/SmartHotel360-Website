@@ -21,14 +21,8 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
     allowPackageConflicts: 
-
-- task: WhiteSource@20
+- task: AzSKSVTs@4
   inputs:
-    cwd: '$(Build.SourcesDirectory)'
-    extensions: '.dll'
-    checkPolicies: 'SEND_ALERTS'
-    projectRule: 'projectName'
-    projectName: '$(Build.Repository.Name)'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'

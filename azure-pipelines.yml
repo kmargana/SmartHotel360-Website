@@ -35,5 +35,3 @@ steps:
     configuration: '$(buildConfiguration)'
     
 - task: AzSKSVTs@4
-  inputs:
-  

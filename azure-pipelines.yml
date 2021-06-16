@@ -36,4 +36,4 @@ steps:
     serviceConnectionEndpoint: 'Meei'
     testType: 'app'
     monitorOnBuild: true
-    failOnIssues: true
+    failOnIssues: false

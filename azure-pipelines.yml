@@ -30,4 +30,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    
+
+
+- task: SnykSecurityScan@0
+  inputs:
+    serviceConnectionEndpoint: 'Meei'
+    testType: 'app'
+    monitorOnBuild: true
+    failOnIssues: true

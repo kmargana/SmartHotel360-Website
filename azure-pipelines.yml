@@ -31,7 +31,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-
 - task: SnykSecurityScan@0
   inputs:
     serviceConnectionEndpoint: 'Meei'
